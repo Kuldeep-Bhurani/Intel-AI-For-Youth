@@ -1,5 +1,3 @@
-import mimetypes
-import os
 from flask import Flask, render_template, request, send_from_directory
 import pickle
 import numpy as np
