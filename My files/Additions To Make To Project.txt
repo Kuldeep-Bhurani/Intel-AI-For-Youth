@@ -1,0 +1,10 @@
+1. In app.py pass book_name to recommend.html
+,
+    book_name = list(popularity_df['Book-Title'].values)
+
+2. In reccomend.html add a datalist
+<datalist id="all_books">
+            {% for i in range(book_name|length) %}
+            <option value="{{ book_name[i] }}">{{ book_name[i] }}</option>
+            {% endfor %}
+        </datalist> 
